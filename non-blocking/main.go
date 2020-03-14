@@ -7,11 +7,11 @@ import (
 
 func main() {
 	fmt.Println("main() started")
-	c := make(chan string)
+	c := make(chan string, 2)
 	
 	go greet(c)
 	
-	c <- "John" // blocking operation as channel is unbuffered
+	c <- "John" // non-blocking operation as channel is unbuffered
 	fmt.Println("main() stopped")
 }
 

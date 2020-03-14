@@ -6,7 +6,7 @@ Project to explore Golang channels
 ## Run
 ```shell
 export GO111MODULE=on
-go run ?
+go run {example-folder}/main.go
 ```
 
 ---
